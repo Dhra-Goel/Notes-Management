@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Journal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+
+        <h1>Task Journal</h1>
+
+        <p>
+            Organize your daily work efficiently and never miss an important task.
+        </p>
+
+    </header>
+
+    <section class="card">
+
+        <h2>Create Task</h2>
+
+        <form id="taskForm">
+
+            <div class="input-group">
+
+                <label>Task Title</label>
+
+                <input
+                    type="text"
+                    id="taskTitle"
+                    placeholder="Enter task title"
+                    required
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Description</label>
+
+                <textarea
+                    id="taskDescription"
+                    placeholder="Write task details..."
+                    required
+                ></textarea>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+
+                    <label>Due Date</label>
+
+                    <input
+                        type="date"
+                        id="taskDate"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Priority</label>
+
+                    <select id="taskPriority">
+
+                        <option value="Low">Low</option>
+
+                        <option value="Medium">
+                            Medium
+                        </option>
+
+                        <option value="High">
+                            High
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <button type="submit">
+
+                Add Task
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="card">
+
+        <div class="section-header">
+
+            <h2>My Tasks</h2>
+
+            <select id="priorityFilter">
+
+                <option value="All">
+                    All Priorities
+                </option>
+
+                <option value="Low">
+                    Low
+                </option>
+
+                <option value="Medium">
+                    Medium
+                </option>
+
+                <option value="High">
+                    High
+                </option>
+
+            </select>
+
+        </div>
+
+        <div id="taskContainer">
+
+            <p class="empty-message">
+
+                No tasks available.
+
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
