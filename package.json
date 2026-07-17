@@ -1,0 +1,25 @@
+{
+  "name": "task-journal",
+  "version": "1.0.0",
+  "description": "Task Journal built using Node.js, Express and MongoDB.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "task",
+    "journal",
+    "express",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0"
+  }
+}
